@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "816562130259",
+    "project_id": "medich-app",
+    "storage_bucket": "medich-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816562130259:android:585832961c0c7dcf97a5a6",
+        "android_client_info": {
+          "package_name": "com.zainul.medichapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816562130259-b5391rbc2oqess7hu0ha2ps1gr2ut4ht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLP4qySffytQ1ZDb-w_88Pe54TFAguu3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816562130259-b5391rbc2oqess7hu0ha2ps1gr2ut4ht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

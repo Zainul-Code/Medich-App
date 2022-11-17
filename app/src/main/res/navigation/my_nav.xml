@@ -17,7 +17,7 @@
             app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_splashFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
+            app:destination="@id/regiterFragment"
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
@@ -27,13 +27,41 @@
         tools:layout="@layout/fragment_view_pager" >
         <action
             android:id="@+id/action_viewPagerFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
+            app:destination="@id/regiterFragment"
             app:popUpTo="@id/viewPagerFragment"
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.zainul.medichapp.HomeFragment"
+        android:id="@+id/regiterFragment"
+        android:name="com.zainul.medichapp.RegisterAvtivity"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/activity_register_avtivity" />
+    <action
+        android:id="@+id/action_masuk_to_loginactivity"
+        app:destination="@id/loginactivity"
+        app:popUpTo="@id/viewPagerFragment"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/loginactivity"
+        android:name="com.zainul.medichapp.LoginActivity"
+        android:label="loginactivity"
+        tools:layout="@layout/activity_login" />
+
+    <action
+        android:id="@+id/action_Daftar_to_Daftaractivity"
+        app:destination="@id/regiterFragment"
+        app:popUpTo="@id/viewPagerFragment"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/homepage"
+        android:name="com.zainul.medichapp.HomePage"
+        android:label="homepage"
+        tools:layout="@layout/activity_home_page" />
+
+    <action
+        android:id="@+id/action_login_to_homepage"
+        app:destination="@id/homepage"
+        app:popUpTo="@id/viewPagerFragment"
+        app:popUpToInclusive="true" />
 </navigation>
