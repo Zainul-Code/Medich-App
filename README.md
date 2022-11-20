@@ -23,3 +23,7 @@ Medich is an application that raises the problem of satisfaction related to BPJS
 - Firebase Auth
 - Api 29 Min
 - SDK
+
+# Includes
+- Login Firebase Auth
+- Geo location
