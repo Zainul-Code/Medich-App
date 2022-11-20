@@ -19,7 +19,7 @@ Medich is an application that raises the problem of satisfaction related to BPJS
 - Done
 
 # Whats is needed
-- Gradle 6.7 Version
+- Gradle 7.4 Version ( Up To Date )
 - Firebase Auth
-- Api 29
+- Api 29 Min
 - SDK
