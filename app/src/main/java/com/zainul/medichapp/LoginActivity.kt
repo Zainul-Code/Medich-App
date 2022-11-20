@@ -69,7 +69,7 @@ class LoginActivity : Fragment(R.layout.activity_login) {
             .addOnCompleteListener(requireActivity()) { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(activity, "Selamat datang $email", Toast.LENGTH_SHORT).show()
-                    findNavController().navigate(R.id.action_login_to_homepage)
+                    findNavController().navigate(R.id.action_login_to_location)
                 } else {
                     Toast.makeText(activity, "${task.exception?.message}", Toast.LENGTH_SHORT).show()
                 }

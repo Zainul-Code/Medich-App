@@ -25,6 +25,10 @@ class ThirdScreen : Fragment() {
             findNavController().navigate(R.id.action_viewPagerFragment_to_homeFragment)
             onBoardingFinished()
         }
+        view.Masuk.setOnClickListener {
+            findNavController().navigate(R.id.action_viewPagerFragment_to_loginactivity)
+            onBoardingFinished()
+        }
 
         return view
     }
