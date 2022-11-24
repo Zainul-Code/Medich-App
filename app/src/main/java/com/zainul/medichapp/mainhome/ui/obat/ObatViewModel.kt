@@ -1,4 +1,4 @@
-package com.zainul.medichapp.mainhome.ui.dashboard
+package com.zainul.medichapp.mainhome.ui.obat
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class ObatViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is obat Fragment"
+        value = ""
     }
     val text: LiveData<String> = _text
 }

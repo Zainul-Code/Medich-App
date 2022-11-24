@@ -87,4 +87,15 @@
         app:destination="@id/mainhome"
         app:popUpTo="@id/viewPagerFragment"
         app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/logout"
+        android:name="com.zainul.medichapp.LoginActivity"
+        android:label="logout"
+        tools:layout="@layout/activity_login" />
+
+    <action
+        android:id="@+id/action_logout_to_login"
+        app:destination="@id/logout"
+        app:popUpTo="@id/viewPagerFragment"
+        app:popUpToInclusive="true" />
 </navigation>

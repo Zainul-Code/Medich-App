@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class DokterViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is dokter Fragment"
+        value = ""
     }
     val text: LiveData<String> = _text
 }
