@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doktermenus.dokter">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/dr1"
+                android:layout_width="399dp"
+                android:layout_height="158dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.214"
+                app:srcCompat="@drawable/dr1" />
+
+            <ImageView
+                android:id="@+id/dr2"
+                android:layout_width="399dp"
+                android:layout_height="158dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.833"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dr1"
+                app:layout_constraintVertical_bias="0.023"
+                app:srcCompat="@drawable/dr2" />
+
+            <ImageView
+                android:id="@+id/dr3"
+                android:layout_width="399dp"
+                android:layout_height="158dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dr2"
+                app:layout_constraintVertical_bias="0.045"
+                app:srcCompat="@drawable/dr3" />
+
+            <ImageView
+                android:id="@+id/dr4"
+                android:layout_width="399dp"
+                android:layout_height="158dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dr3"
+                app:layout_constraintVertical_bias="0.045"
+                app:srcCompat="@drawable/dr4" />
+
+            <ImageView
+                android:id="@+id/dr5"
+                android:layout_width="399dp"
+                android:layout_height="158dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dr4"
+                app:layout_constraintVertical_bias="0.045"
+                app:srcCompat="@drawable/dr2" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="371dp"
+                android:layout_height="73dp"
+                app:layout_constraintBottom_toTopOf="@+id/dr1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.727"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.741"
+                app:srcCompat="@drawable/searchdokteranak" />
+
+            <ImageView
+                android:id="@+id/backabu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/imageView25"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.044"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.467"
+                app:srcCompat="@drawable/backabu" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

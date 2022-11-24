@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile"
+        app:showAsAction="ifRoom"
+        android:title="Profile">
+    </item>
+    <item
+        android:id="@+id/notif"
+        android:icon="@drawable/notif_icon"
+        app:showAsAction="ifRoom|withText"
+        android:title="notif">
+    </item>
+</menu>

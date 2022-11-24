@@ -1,14 +1,15 @@
 package com.zainul.medichapp.mainhome.ui.obat
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.zainul.medichapp.databinding.FragmentObatBinding
-import com.zainul.medichapp.mainhome.ui.dashboard.ObatViewModel
+import com.zainul.medichapp.gelembung.Activitymaps
+import com.zainul.medichapp.obat.JenisObat
+import kotlinx.android.synthetic.main.fragment_obat.view.*
 
 
 class ObatFragment : Fragment() {
@@ -24,21 +25,29 @@ class ObatFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val dashboardViewModel =
-            ViewModelProvider(this)[ObatViewModel::class.java]
 
         _binding = FragmentObatBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
+
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        view.apotik1.setOnClickListener {
+            val intent = Intent(activity, JenisObat::class.java)
+            startActivity(intent)
+        }
+         view.apotik2.setOnClickListener {
+            val intent = Intent(activity, Activitymaps::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+
     }
 }

@@ -1,20 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".mainhome.ui.obat.ObatFragment">
 
-    <TextView
-        android:id="@+id/text_dashboard"
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="8dp" />
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/apotik1"
+            android:layout_width="362dp"
+            android:layout_height="158dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.145"
+            app:srcCompat="@drawable/apotik1" />
+
+
+        <ImageView
+            android:id="@+id/apotik2"
+            android:layout_width="365dp"
+            android:layout_height="158dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.395"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apotik1"
+            app:layout_constraintVertical_bias="0.027"
+            app:srcCompat="@drawable/apotik2" />
+
+        <ImageView
+            android:id="@+id/apotik3"
+            android:layout_width="365dp"
+            android:layout_height="158dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apotik2"
+            app:layout_constraintVertical_bias="0.045"
+            app:srcCompat="@drawable/apotik3" />
+
+        <ImageView
+            android:id="@+id/apotik4"
+            android:layout_width="365dp"
+            android:layout_height="158dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apotik3"
+            app:layout_constraintVertical_bias="0.045"
+            app:srcCompat="@drawable/apotik4" />
+
+        <ImageView
+            android:id="@+id/apotik5"
+            android:layout_width="365dp"
+            android:layout_height="158dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apotik4"
+            app:layout_constraintVertical_bias="0.045"
+            app:srcCompat="@drawable/apotik1" />
+
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="367dp"
+            android:layout_height="61dp"
+            app:layout_constraintBottom_toTopOf="@+id/apotik1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.39"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.847"
+            app:srcCompat="@drawable/apotiksearch" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

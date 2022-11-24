@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".mainhome.ui.obat.ObatFragment">
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="346dp"
+            android:layout_height="52dp"
+            android:src="@drawable/searchobat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.067" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="179dp"
+            android:layout_height="266dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/paracetamol"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            app:layout_constraintVertical_bias="0.039" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="179dp"
+            android:layout_height="266dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/sanmol"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView17"
+            app:layout_constraintVertical_bias="0.003" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="179dp"
+            android:layout_height="266dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/sanmol"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView19"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="179dp"
+            android:layout_height="266dp"
+            android:layout_marginStart="212dp"
+            android:src="@drawable/paracetamol"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="179dp"
+            android:layout_height="266dp"
+            android:layout_marginStart="212dp"
+            android:src="@drawable/sanmol"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView17"
+            app:layout_constraintVertical_bias="0.003" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="179dp"
+            android:layout_height="266dp"
+            android:layout_marginStart="212dp"
+            android:src="@drawable/sanmol"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView19"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
