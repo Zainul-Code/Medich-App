@@ -56,15 +56,15 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
-            android:id="@+id/imageView22"
-            android:layout_width="179dp"
-            android:layout_height="266dp"
+            android:id="@+id/amoxilin"
+            android:layout_width="202dp"
+            android:layout_height="268dp"
             android:layout_marginStart="212dp"
-            android:src="@drawable/paracetamol"
+            android:src="@drawable/amoxilin"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView15"
-            app:layout_constraintVertical_bias="0.041" />
+            app:layout_constraintVertical_bias="0.036" />
 
         <ImageView
             android:id="@+id/imageView23"

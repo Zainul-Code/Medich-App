@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.zainul.medichapp.databinding.FragmentObatBinding
-import com.zainul.medichapp.gelembung.Activitymaps
 import com.zainul.medichapp.obat.JenisObat
 import kotlinx.android.synthetic.main.fragment_obat.view.*
 
@@ -35,12 +34,8 @@ class ObatFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.apotik1.setOnClickListener {
-            val intent = Intent(activity, JenisObat::class.java)
-            startActivity(intent)
-        }
          view.apotik2.setOnClickListener {
-            val intent = Intent(activity, Activitymaps::class.java)
+            val intent = Intent(activity, JenisObat::class.java)
             startActivity(intent)
         }
     }

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dokter.DetailDokter">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+    <ImageView
+        android:id="@+id/iv_dralif"
+        android:layout_width="597dp"
+        android:layout_height="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dralif" />
+
+    <ImageButton
+        android:id="@+id/imgbuttonback"
+        android:layout_width="43dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/back2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/rating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgbuttonback"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/like"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_rating" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+android:layout_width="match_parent"
+android:layout_height="695dp"
+android:layout_marginTop="180dp"
+android:background="@color/putih">
+
+
+<TextView
+    android:id="@+id/tv_dralifprasetya"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="24dp"
+    android:text="Dr. Alif Prasetya"
+    android:textSize="30sp"
+    android:textColor="@color/hitam"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/textView19"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:layout_marginEnd="24dp"
+    android:text="5 Tahun"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<ImageView
+    android:layout_width="28dp"
+    android:layout_height="28dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginEnd="6dp"
+    android:src="@drawable/bag"
+    app:layout_constraintEnd_toStartOf="@+id/textView19"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+<TextView
+    android:id="@+id/tv_dokterumum"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    android:text="Dokter Umum"
+    android:textColor="@color/abu3"
+    app:layout_constraintStart_toStartOf="@+id/tv_dralifprasetya"
+    app:layout_constraintTop_toTopOf="@+id/tv_dralifprasetya" />
+
+<ImageView
+    android:id="@+id/iv_rumahsakit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="30dp"
+    android:src="@drawable/rumahsakit"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_dokterumum" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:layout_marginTop="30dp"
+    android:text="Praktik"
+    android:textColor="@color/hitam"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/iv_rumahsakit"
+    app:layout_constraintTop_toBottomOf="@+id/tv_dokterumum" />
+
+
+<TextView
+    android:id="@+id/rsudashari"
+    android:layout_width="260dp"
+    android:layout_height="40dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="6dp"
+    android:textSize="14sp"
+    android:text="RSUD Ashari, Kabupaten Pemalang Jawa tengah"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/iv_rumahsakit" />
+
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="10dp"
+    android:src="@drawable/graduation"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/rsudashari" />
+
+<TextView
+    android:id="@+id/tv_alumnus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:layout_marginTop="6dp"
+    android:text="Alumnus"
+    android:textColor="@color/hitam"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@id/iv_rumahsakit"
+    app:layout_constraintTop_toBottomOf="@+id/rsudashari" />
+
+
+<TextView
+    android:id="@+id/tv_univairlangga"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="6dp"
+    android:text="Universitas Airlangga, 2016 "
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_alumnus" />
+
+<TextView
+    android:id="@+id/aturjadwal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="20dp"
+    android:text="Atur Jadwal"
+    android:textColor="@color/hitam"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tv_univairlangga" />
+
+<ImageView
+    android:id="@+id/iv_aturjadwal"
+    android:layout_width="360dp"
+    android:layout_height="74dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp"
+    android:src="@drawable/aturjadwal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/aturjadwal" />
+
+<TextView
+    android:id="@+id/tv_aturwaktu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:text="Atur Waktu"
+    android:textColor="@color/hitam"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/iv_aturjadwal" />
+
+<ImageView
+    android:id="@+id/iv_aturwaktu"
+    android:layout_width="365dp"
+    android:layout_height="47dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="6dp"
+    android:src="@drawable/aturwaktu2"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_aturwaktu" />
+
+
+<TextView
+    android:id="@+id/tv_biayakonsul"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="25dp"
+    android:text="Biaya Konsultasi"
+    android:textSize="14sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/iv_aturwaktu" />
+
+<TextView
+    android:id="@+id/tv_harga"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="24dp"
+    android:text="Rp. 40.000"
+    android:textColor="@color/merahmuda"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_biayakonsul" />
+
+<ImageButton
+    android:id="@+id/imageButton6"
+    android:layout_width="150dp"
+    android:layout_height="57dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginBottom="16dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:srcCompat="@drawable/buttonchat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>

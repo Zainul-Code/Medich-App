@@ -1,5 +1,6 @@
 package com.zainul.medichapp.mainhome.ui.dokter
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.zainul.medichapp.databinding.FragmentDokterBinding
+import com.zainul.medichapp.dokter.DetailDokter
+import kotlinx.android.synthetic.main.fragment_dokter.view.*
 
 class DokterFragment : Fragment() {
 
@@ -29,7 +32,14 @@ class DokterFragment : Fragment() {
 
         return root
     }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
+        view.dr3.setOnClickListener {
+            val intent = Intent(activity, DetailDokter::class.java)
+            startActivity(intent)
+        }
+    }
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

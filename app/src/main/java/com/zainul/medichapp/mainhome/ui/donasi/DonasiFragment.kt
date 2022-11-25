@@ -1,5 +1,6 @@
 package com.zainul.medichapp.mainhome.ui.donasi
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.zainul.medichapp.databinding.FragmentDonasiBinding
+import com.zainul.medichapp.donasi.PayDonasi
 import com.zainul.medichapp.mainhome.ui.notifications.DonasiViewModel
+import kotlinx.android.synthetic.main.fragment_donasi.view.*
 
 class DonasiFragment : Fragment() {
 
@@ -31,7 +34,14 @@ class DonasiFragment : Fragment() {
 
         return root
     }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
+        view.btndonasiskrng.setOnClickListener {
+            val intent = Intent(activity, PayDonasi::class.java)
+            startActivity(intent)
+        }
+    }
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
