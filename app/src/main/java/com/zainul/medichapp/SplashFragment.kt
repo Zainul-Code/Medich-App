@@ -6,7 +6,6 @@ import android.os.Handler
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.WindowManager
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
@@ -36,13 +35,10 @@ class SplashFragment : Fragment() {
     override fun onAttach(context: Context) {
         super.onAttach(context)
 
-        requireActivity().window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
 
     }
 
     override fun onDetach() {
         super.onDetach()
-
-        requireActivity().window.clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
-    }
+ }
 }

@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.WindowManager
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.zainul.medichapp.R
@@ -42,14 +41,11 @@ class ThirdScreen : Fragment() {
     override fun onAttach(context: Context) {
         super.onAttach(context)
 
-        requireActivity().window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
-
     }
 
     override fun onDetach() {
         super.onDetach()
 
-        requireActivity().window.clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
     }
 
 }

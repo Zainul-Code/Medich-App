@@ -116,17 +116,17 @@
 
                     <ImageView
                         android:id="@+id/gambar1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="87dp"
+                        android:layout_height="match_parent"
                         android:layout_marginRight="30dp"
                         android:src="@drawable/gelembung" />
 
                     <ImageView
-                        android:id="@+id/gambar2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:id="@+id/gambar5"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
                         android:layout_marginRight="30dp"
-                        android:src="@drawable/gelembung1" />
+                        android:src="@drawable/gelembung4"/>
 
                     <ImageView
                         android:id="@+id/gambar3"
@@ -143,11 +143,11 @@
                         android:src="@drawable/gelembung3" />
 
                     <ImageView
-                        android:id="@+id/gambar5"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/gambar2"
+                        android:layout_width="108dp"
                         android:layout_height="match_parent"
                         android:layout_marginRight="30dp"
-                        android:src="@drawable/gelembung4" />
+                        android:src="@drawable/gelembung1" />
 
                     <ImageView
                         android:id="@+id/gambar6"
@@ -160,6 +160,7 @@
                 </LinearLayout>
 
             </HorizontalScrollView>
+
             <TextView
                 android:id="@+id/textView01"
                 android:layout_width="wrap_content"
@@ -222,24 +223,31 @@
 
                     <ImageView
                         android:id="@+id/dokter1"
-                        android:layout_width="wrap_content"
+                        android:layout_width="119dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="30dp"
                         android:src="@drawable/dokter1" />
 
                     <ImageView
                         android:id="@+id/dokter2"
-                        android:layout_width="wrap_content"
+                        android:layout_width="119dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="30dp"
                         android:src="@drawable/dokter2" />
 
                     <ImageView
                         android:id="@+id/dokter3"
-                        android:layout_width="wrap_content"
+                        android:layout_width="119dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="30dp"
                         android:src="@drawable/dokter3" />
+
+                    <ImageView
+                        android:id="@+id/dokter4"
+                        android:layout_width="119dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/dokter4" />
 
 
                 </LinearLayout>
@@ -312,18 +320,19 @@
                     android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/bannerbawah"
+                        android:layout_width="258dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/bannerbawah" />
+
+                    <ImageView
                         android:id="@+id/bannerbawah1"
-                        android:layout_width="wrap_content"
+                        android:layout_width="258dp"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="30dp"
                         android:src="@drawable/bannerbawah1" />
 
-                    <ImageView
-                        android:id="@+id/bannerbawah2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="30dp"
-                        android:src="@drawable/bannerbawah" />
 
 
                 </LinearLayout>

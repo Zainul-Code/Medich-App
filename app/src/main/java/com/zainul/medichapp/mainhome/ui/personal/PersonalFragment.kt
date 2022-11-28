@@ -1,15 +1,15 @@
 package com.zainul.medichapp.mainhome.ui.personal
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
-import com.zainul.medichapp.R
+import com.zainul.medichapp.LoginActivity
 import com.zainul.medichapp.databinding.FragmentPersonalBinding
-import kotlinx.android.synthetic.main.fragment_personal.*
+import kotlinx.android.synthetic.main.fragment_personal.view.*
 
 class PersonalFragment : Fragment() {
 
@@ -37,10 +37,16 @@ class PersonalFragment : Fragment() {
         if (user != null) {
             binding.edtName.setText(user.displayName)
             binding.edtEmail.text = user.email
-        }
 
-            logout.setOnClickListener {
-                findNavController().navigate(R.id.action_logout_to_login)
+            view.logout.setOnClickListener {
+                val intent = Intent(activity, LoginActivity::class.java)
+                startActivity(intent)
             }
         }
     }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+}
+

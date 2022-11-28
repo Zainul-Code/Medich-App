@@ -15,13 +15,13 @@
         tools:layout_editor_absoluteY="0dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
+            android:layout_width="390dp"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/dr1"
-                android:layout_width="399dp"
+                android:layout_width="371dp"
                 android:layout_height="158dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +34,7 @@
 
             <ImageView
                 android:id="@+id/dr2"
-                android:layout_width="399dp"
+                android:layout_width="371dp"
                 android:layout_height="158dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +46,7 @@
 
             <ImageView
                 android:id="@+id/dr3"
-                android:layout_width="399dp"
+                android:layout_width="371dp"
                 android:layout_height="158dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -54,11 +54,11 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/dr2"
                 app:layout_constraintVertical_bias="0.045"
-                app:srcCompat="@drawable/dr3" />
+                app:srcCompat="@drawable/dr3"/>
 
             <ImageView
                 android:id="@+id/dr4"
-                android:layout_width="399dp"
+                android:layout_width="371dp"
                 android:layout_height="158dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -70,7 +70,7 @@
 
             <ImageView
                 android:id="@+id/dr5"
-                android:layout_width="399dp"
+                android:layout_width="371dp"
                 android:layout_height="158dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -86,10 +86,9 @@
                 android:layout_height="73dp"
                 app:layout_constraintBottom_toTopOf="@+id/dr1"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.772"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.533"
+                app:layout_constraintVertical_bias="0.4"
                 app:srcCompat="@drawable/searchdokteranak" />
 
 

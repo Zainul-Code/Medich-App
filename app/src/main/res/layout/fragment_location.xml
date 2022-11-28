@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LocationRead"
-    android:background="@drawable/lokasi">
+    android:background="@drawable/backlokasi">
 
 
     <TextView
